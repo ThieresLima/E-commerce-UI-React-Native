@@ -33,12 +33,12 @@ function NavigationTab() {
       screenOptions = {({ route }) => ({
         tabBarIcon: ({ color, size }) => {
           const { name } = icons[route.name];
-          return <Icon name={name} size={size} color={color} />
+          return <Icon name={name} size={28} color={color} />
         },
       })}
       tabBarOptions={{
             style: {
-              height: 65,
+              height: 60,
               backgroundColor: '#601b91', 
             },
             labelStyle: {

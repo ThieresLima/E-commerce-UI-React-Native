@@ -1,9 +1,12 @@
 import React from 'react';
-import { Container, Icons } from './styles';
+import { Container, Icons, CardContainer } from './styles';
 
 import Header from '../../components/Header';
 import Icon  from 'react-native-vector-icons/MaterialIcons';
 import Cart  from 'react-native-vector-icons/MaterialCommunityIcons';
+
+import Card from '../../components/Card';
+
 Icon.loadFont();
 Cart.loadFont();
 
@@ -16,6 +19,14 @@ export default function Offers() {
           <Cart name="cart" size={28} color="#FFF" />
         </Icons>     
       </Header>
+
+      <CardContainer>
+        <Card  
+          image={}
+          title=""
+          price=""
+        />
+      </CardContainer>
     </Container>
   );
 };
