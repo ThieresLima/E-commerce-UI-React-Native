@@ -7,6 +7,9 @@ import Cart  from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import Card from '../../components/Card';
 
+import LoadProducts from '../../services/api';
+const data = LoadProducts();
+
 Icon.loadFont();
 Cart.loadFont();
 
@@ -21,11 +24,15 @@ export default function Offers() {
       </Header>
 
       <CardContainer>
-        <Card  
-          image={}
-          title=""
-          price=""
-        />
+        {data.map((product, index) => {
+          return (
+            <Card key={index}
+              image={product.image}
+              title={product.title}
+              price={product.price}
+            />
+          );
+        })}
       </CardContainer>
     </Container>
   );
