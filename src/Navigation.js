@@ -2,7 +2,7 @@ import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import Offers from './screens/Offers';
-import Departament from './screens/Departament';
+import DepartmentList from './screens/DepartmentList';
 import Help from './screens/Help';
 import Profile from './screens/Profile';
 
@@ -15,7 +15,7 @@ const icons = {
   Offers: {
     name: 'home'
   },
-  Departament: {
+  Department: {
     name: 'category'
   },
   Help: {
@@ -57,8 +57,8 @@ function NavigationTab() {
        }}
       />
       <Screen 
-        name="Departament" 
-        component={Departament} 
+        name="Department" 
+        component={DepartmentList} 
         options={{
           tabBarLabel: "Departamento"
         }}       

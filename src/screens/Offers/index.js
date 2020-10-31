@@ -7,8 +7,8 @@ import Cart  from 'react-native-vector-icons/MaterialCommunityIcons';
 
 import Card from '../../components/Card';
 
-import LoadProducts from '../../services/api';
-const data = LoadProducts();
+import Products from '../../services/Products';
+const data = Products();
 
 Icon.loadFont();
 Cart.loadFont();

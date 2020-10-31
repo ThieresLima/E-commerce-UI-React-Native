@@ -5,7 +5,7 @@ import celularMoto from '../assets/img/celular-motorola.jpg';
 import xiaomiMiA3Preto from '../assets/img/mi-a3-preto.jpg';
 
 
-export default function LoadProducts() {
+export default function Products() {
   return [
     {
       id: 1,
