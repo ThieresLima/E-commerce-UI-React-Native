@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Icons,  } from './styles';
+import { Container } from './styles';
 
 import Header from '../../components/Header';
 import Icon  from 'react-native-vector-icons/MaterialIcons';
@@ -15,12 +15,7 @@ Cart.loadFont();
 export default function DepartmentList() {
   return (
     <Container>
-      <Header text="Departamento">
-      <Icons>
-          <Icon name="search" size={28} color="#FFF" />
-          <Cart name="cart" size={28} color="#FFF" />
-        </Icons> 
-      </Header>
+      <Header text="Departamento" />
 
       {data.map((department, index) => {
         return (

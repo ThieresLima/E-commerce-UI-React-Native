@@ -1,10 +1,10 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import Offers from './screens/Offers';
-import DepartmentList from './screens/DepartmentList';
-import Help from './screens/Help';
-import Profile from './screens/Profile';
+import Offers from '../screens/Offers';
+import DepartmentList from '../screens/DepartmentList';
+import Help from '../screens/Help';
+import Profile from '../screens/Profile';
 
 import Icon  from 'react-native-vector-icons/MaterialIcons';
 Icon.loadFont();
@@ -16,7 +16,7 @@ const icons = {
     name: 'home'
   },
   Department: {
-    name: 'category'
+    name: 'notes'
   },
   Help: {
     name: 'live-help'
@@ -26,7 +26,7 @@ const icons = {
   },
 }
 
-function NavigationTab() {
+function NavigationTabs() {
   return (
     <Navigator
       initialRouteName="Offers"
@@ -81,4 +81,4 @@ function NavigationTab() {
   );
 };
 
-export default NavigationTab;
+export default NavigationTabs;

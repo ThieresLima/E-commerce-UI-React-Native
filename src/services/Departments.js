@@ -17,7 +17,7 @@ export default function Departments() {
       id: 2,
       image: sport,
       title: "Esportes",
-      info: "R$70 items"
+      info: "70 items"
     },
     {
       id: 3,

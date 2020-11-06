@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.View`
   width: 170px;
-  background-color: #e3e5e8;
+  background-color: #FFF;
   border-radius: 15px;
   margin-bottom: 15px;
 `;
@@ -23,7 +23,7 @@ export const Title = styled.Text`
 export const Price = styled.Text`
   font-size: 16px;
   font-weight: bold;
-  color: #17b24d;
+  color: #1abf1a;
   padding: 3px;
   margin-left: 5px;
 `;
